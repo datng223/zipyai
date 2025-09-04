@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    zipy.init("3d8e6403");
+    zipy.init("240c8412");
   }, []);
 
   return <Component {...pageProps} />;
