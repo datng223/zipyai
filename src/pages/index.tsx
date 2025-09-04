@@ -44,7 +44,7 @@ export default function Home() {
               />
               Deploy now
             </a>
-            <button>error</button>
+            <button onClick={() => console.error("error")}>error</button>
             <a
               href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
