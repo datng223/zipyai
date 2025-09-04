@@ -18,5 +18,17 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, []);
 
+  useEffect(() => {
+    // Khởi tạo Google Analytics
+    if (typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(...args: any[]) {
+        window.dataLayer.push(args);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-4XTZ789FND");
+    }
+  }, []);
+
   return <Component {...pageProps} />;
 }
