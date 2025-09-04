@@ -45,11 +45,12 @@ export default function Home() {
               Deploy now
             </a>
             <button
+              className={styles.errorButton}
               onClick={() => {
                 throw new Error("Test Zipy error!");
               }}
             >
-              error
+              Test Error
             </button>
             <a
               href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
